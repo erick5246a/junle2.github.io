@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>君乐民宿 - 豪华海滨别墅</title>
+    <title>君乐民宿 - 豪华海滨度假体验</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,6 +22,19 @@
         }
         header p {
             margin: 10px 0;
+        }
+        header .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #0077b6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+        header .btn:hover {
+            background-color: #005f8a;
         }
         nav {
             background-color: rgba(0, 0, 0, 0.7);
@@ -45,17 +58,16 @@
             margin-bottom: 20px;
             border-radius: 10px;
         }
-        .image {
-            width: 100%;
-            border-radius: 10px;
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+            padding: 20px 0;
         }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #0077b6;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
         }
         footer {
             text-align: center;
@@ -69,40 +81,57 @@
 
     <header>
         <h1>君乐民宿</h1>
-        <p>豪华海滨别墅 · 享受极致度假体验</p>
-        <a href="#booking" class="btn">立即预订</a>
+        <p>豪华海滨生态 · 享受极致度假体验</p>
+        <a href="https://erick5246a.github.io/junle4.github.io/" class="btn">立即预订</a>
     </header>
 
     <nav>
         <a href="#about">关于我们</a>
-        <a href="#villas">别墅一览</a>
-        <a href="#experience">度假体验</a>
+        <a href="#rooms">房型介绍</a>
+        <a href="#experience">特色体验</a>
         <a href="#contact">联系我们</a>
     </nav>
 
     <div class="container">
         <div id="about" class="section">
             <h2>关于我们</h2>
-            <p>君乐民宿提供高端豪华的海滨别墅租赁服务，让您的假期尽享宁静与奢华。我们致力于为每一位客人提供舒适、优质的住宿体验。</p>
+            <p>君乐民宿位于海南临高碧桂园金沙滩，拥有不同房型的海景公寓，适合家庭旅居、度假与长租。小区环境优美，周边生活便利，步行可达海滩。</p>
         </div>
 
-        <div id="villas" class="section">
-            <h2>别墅一览</h2>
-            <img src="https://via.placeholder.com/1200x800" alt="豪华别墅" class="image">
-            <p>精选不同房型的豪华别墅，配备现代化设施，让您享受舒适度假体验。每个别墅都提供独特的海滨美景，您可以在这里放松身心，尽情享受阳光与沙滩。</p>
+        <div id="rooms" class="section">
+            <h2>房型介绍</h2>
+            <h3>🌊 海景两居室</h3>
+            <p>两室一厅一卫，适合情侣或小家庭入住，阳台可看海。</p>
+            <h3>🌅 三室两厅</h3>
+            <p>三房两厅两卫，适合多人家庭旅居，宽敞舒适，可做饭。</p>
+            <h3>🏖️ 四室复式</h3>
+            <p>复式楼设计，带独立阳台和海景视野，适合团体出游。</p>
+        </div>
+
+        <div class="gallery">
+            <img src="https://i.pinimg.com/736x/cd/8c/25/cd8c25cd90a5d1aa69966062d5c0032c.jpg" alt="图片1">
+            <img src="https://i.pinimg.com/736x/70/98/f1/7098f1184aa9417a1d0d7e80cc937d17.jpg" alt="图片2">
+            <img src="https://i.pinimg.com/736x/08/46/c6/0846c615138173898c9f22905953d702.jpg" alt="图片3">
+            <img src="https://i.pinimg.com/736x/3a/fa/d0/3afad00bb1f3cfc29a2baafd53bc9bb2.jpg" alt="图片4">
+            <img src="https://i.pinimg.com/736x/4b/76/0b/4b760b32b614575381830b0e3fd3c1d8.jpg" alt="图片5">
+            <img src="https://aequora-villas.com/wp-content/uploads/2024/02/2022_aequora-1-022.jpg" alt="图片6">
         </div>
 
         <div id="experience" class="section">
-            <h2>度假体验</h2>
-            <img src="https://via.placeholder.com/1200x800" alt="水疗体验" class="image">
-            <p>我们提供丰富的度假活动，包括水疗、海钓、私人厨师服务等，满足您的高端需求。无论您是想要放松身心，还是享受海洋活动，我们都能为您提供完美的体验。</p>
+            <h2>特色体验</h2>
+            <h3>🎣 海钓活动</h3>
+            <p>提供游艇出海海钓体验，近海捕捞，感受渔民生活。</p>
+            <h3>🥘 海鲜市场采购</h3>
+            <p>步行可到海鲜市场，购买最新鲜的海产，在公寓厨房自煮美食。</p>
+            <h3>🚲 海滩骑行</h3>
+            <p>租赁自行车，沿海岸线骑行，欣赏日出日落美景。</p>
         </div>
 
         <div id="contact" class="section">
             <h2>联系我们</h2>
-            <p>电话：+86 123-456-7890</p>
-            <p>微信：junleresort</p>
-            <p>地址：海南省临高县碧桂园金沙滩</p>
+            <p>📞 电话：+86 133-7995-1954</p>
+            <p>📱 微信：UKmo4ym</p>
+            <p>📍 地址：海南省临高县碧桂园金沙滩</p>
         </div>
     </div>
 
