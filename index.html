@@ -38,19 +38,24 @@
             background-color: #005f8a;
         }
         nav {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
             text-align: center;
+            z-index: 1000;
         }
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 20px;
             padding: 10px;
+            font-size: 18px;
         }
         .container {
             max-width: 1200px;
-            margin: auto;
+            margin: 80px auto 20px;
             padding: 20px;
             background: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
@@ -81,20 +86,19 @@
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>君乐民宿</h1>
-        <p>豪华海滨生态 · 享受极致度假体验</p>
-        <a href="https://erick5246a.github.io/junle4.github.io/" class="btn">立即预订</a>
-        <a href="https://www.canva.com/design/DAGeS4XK_5U/f2IKKTd0zGHul-7V3KBkCw/view?utm_content=DAGeS4XK_5U&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3d01c425ad#5" class="btn">更多详情</a>
-    </header>
-
     <nav>
         <a href="#about">关于我们</a>
         <a href="#rooms">房型介绍</a>
         <a href="#experience">特色体验</a>
         <a href="#contact">联系我们</a>
     </nav>
+
+    <header>
+        <h1>君乐民宿</h1>
+        <p>豪华海滨生态 · 享受极致度假体验</p>
+        <a href="https://erick5246a.github.io/junle4.github.io/" class="btn">立即预订</a>
+        <a href="https://www.canva.com/design/DAGeS4XK_5U/f2IKKTd0zGHul-7V3KBkCw/view?utm_content=DAGeS4XK_5U&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3d01c425ad" class="btn">更多详情</a>
+    </header>
 
     <div class="container">
         <div id="about" class="section">
@@ -124,6 +128,5 @@
         <footer>
             <p>&copy; 2025 君乐民宿. 版权所有.</p>
         </footer>
-
 </body>
 </html>
