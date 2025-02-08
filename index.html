@@ -11,19 +11,25 @@
             background-size: cover;
             margin: 0;
             padding: 0;
+            height: 100%;
+            color: #333;
         }
+
         header {
             color: white;
             text-align: center;
             padding: 60px 20px;
             background: rgba(0, 0, 0, 0.5);
         }
-            header h1 {
+
+        header h1 {
             margin: 0;
         }
+
         header p {
             margin: 10px 0;
         }
+
         header .btn {
             display: inline-block;
             padding: 12px 24px;
@@ -34,20 +40,27 @@
             font-size: 18px;
             margin-top: 15px;
         }
+
         header .btn:hover {
             background-color: #32373c;
         }
+
         nav {
+            position: sticky;
+            top: 0;
             background-color: rgba(0, 0, 0, 0.7);
             padding: 15px;
             text-align: center;
+            z-index: 10;
         }
+
         nav a {
             color: white;
             text-decoration: none;
             margin: 0 15px;
             padding: 10px;
         }
+
         .container {
             max-width: 1200px;
             margin: auto;
@@ -55,29 +68,34 @@
             background: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
         }
+
         .section {
             background-color: white;
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 10px;
         }
+
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 10px;
             padding: 20px 0;
         }
+
         .gallery img {
             width: 100%;
             height: auto;
             border-radius: 10px;
         }
+
         footer {
             text-align: center;
             padding: 15px;
             background-color: #0077b6;
             color: white;
         }
+
     </style>
 </head>
 <body>
@@ -90,11 +108,11 @@
     </header>
 
    <nav>
-    <a href="#about" aria-label="了解更多关于我们" class="nav-link">关于我们</a>
-    <a href="#rooms" aria-label="了解更多房型介绍" class="nav-link">房型介绍</a>
-    <a href="#experience" aria-label="了解更多特色体验" class="nav-link">特色体验</a>
-    <a href="#contact" aria-label="联系我们" class="nav-link">联系我们</a>
-</nav>
+        <a href="#about" aria-label="了解更多关于我们" class="nav-link">关于我们</a>
+        <a href="#rooms" aria-label="了解更多房型介绍" class="nav-link">房型介绍</a>
+        <a href="#experience" aria-label="了解更多特色体验" class="nav-link">特色体验</a>
+        <a href="#contact" aria-label="联系我们" class="nav-link">联系我们</a>
+    </nav>
 
     <div class="container">
         <div id="about" class="section">
@@ -140,13 +158,13 @@
             <p>📞 电话：+86 133-7989-8760</p>
             <p>📧 订房首页：https://hotels.ctrip.com/hotels/117471148.html?cityid=20868#ctm_ref=www_hp_his_lst</p>
             <p>📲 微信：扫码添加获取更多房源信息</p>
-              </div>
-            <img src="https://i.postimg.cc/DZKY8cH9/default-2.jpg">
         </div>
+        <img src="https://i.postimg.cc/DZKY8cH9/default-2.jpg" style="width: 5px; height: 5px;">
     </div>
 
     <footer>
         <p>&copy; 2025 君乐民宿. 版权所有.</p>
     </footer>
+
 </body>
 </html>
