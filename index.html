@@ -1,191 +1,211 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>君乐民宿 - 豪华海滨度假体验</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: url('https://i.postimg.cc/nhhmmCQk/mmexport1703820514586.png') no-repeat center center fixed;
-            background-size: cover;
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            color: #333;
-        }
-
-        header {
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-            background: rgba(0, 0, 0, 0.5);
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        header p {
-            margin: 10px 0;
-        }
-
-        header .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #0077b6;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-            margin-top: 15px;
-        }
-
-        header .btn:hover {
-            background-color: #32373c;
-        }
-
-        nav {
-            position: sticky;
-            top: 0;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 15px;
-            text-align: center;
-            z-index: 10;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 10px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
-        }
-
-        .section {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 10px;
-            padding: 20px 0;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #0077b6;
-            color: white;
-        }
-
-    </style>
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightwind@3.2.0/src/lightswind.css">
 </head>
-<body>
 
-    <header>
-        <h1>君乐民宿</h1>
-        <p>豪华海滨生态 · 享受极致度假体验</p>
-        <a href="https://erick5246a.github.io/junle4.github.io/" class="btn">立即预订</a>
-        <a href="https://www.canva.com/design/DAGeS4XK_5U/f2IKKTd0zGHul-7V3KBkCw/view?utm_content=DAGeS4XK_5U&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3d01c425ad" class="btn">更多详情</a>
-        <a href="https://www.canva.com/design/DAGeroFpQrI/iV6zyda2yO90VaWEdvbvaQ/view?utm_content=DAGeroFpQrI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0d7d715c54" class="btn">更多详情Ⅱ</a>
+<body>
+<div class="w-full h-screen bg-gray-200 dark:bg-gray-900 font-primarylw overflow-y-scroll scrollbar-hide">
+    <header class="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg bg-gray-200 dark:bg-gray-900">
+        <div class="flex-1 flex justify-between items-center">
+            <h2 class="text-4xl font-sans text-black dark:text-white">Muhilan</h2>
+        </div>
+        <label for="menu-toggle" class="cursor-pointer md:hidden block">
+            <svg class="fill-current text-black dark:text-white" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 20 20">
+                <title>menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div id="menu" class="hidden md:flex md:items-center md:w-auto w-full absolute md:static top-16 left-0 md:bg-transparent transition-all 
+        z-50 duration-300 ease-in-out bg-gray-300 dark:bg-gray-800 md:dark:bg-transparent">
+            <nav>
+                <ul class="md:flex items-center justify-between text-base text-gray-700 dark:text-gray-100 md:pt-0">
+                    <li><a class="md:p-4 py-3 px-4 block text-primarylw" href="#">Home</a></li>
+                    <li><a class="md:p-4 py-3 px-4 block" href="#">About Me</a></li>
+                    <li><a class="md:p-4 py-3 px-4 block" href="#">Education</a></li>
+                    <li><a class="md:p-4 py-3 px-4 block" href="#">Experience</a></li>
+                    <li><a class="md:p-4 py-3 px-4 block" href="#">Projects</a></li>
+                    <li><a class="md:p-4 py-3 px-4 block md:mb-0 mb-2" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-   <nav>
-        <a href="#about" aria-label="了解更多关于我们" class="nav-link">关于我们</a>
-        <a href="#rooms" aria-label="了解更多房型介绍" class="nav-link">房型介绍</a>
-        <a href="#experience" aria-label="了解更多特色体验" class="nav-link">特色体验</a>
-        <a href="#contact" aria-label="联系我们" class="nav-link">联系我们</a>
-    </nav>
-
-    <div class="container">
-        <div id="about" class="section">
-            <h2>关于我们</h2>
-            <p>君乐民宿位于海南临高碧桂园金沙滩，拥有不同房型的海景公寓，适合家庭旅居、度假与长租。小区环境优美，周边生活便利，步行可达海滩。</p>
+    <div
+        class="h-full w-full mx-auto relative pt-20 pb-20 xl:px-16 px-8 flex md:flex-row flex-col gap-4 justify-center items-center">
+        <div class="w-full relative">
+            <img class="shadow-2xl shadow-blue-500 animate-[spin_12s_linear_infinite] absolute left-0 right-0 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto"
+                src="https://cdn.buymeacoffee.com/uploads/profile_pictures/2023/11/PIXxBAJGpUj1wI7F.png@300w_0e.webp"
+                alt="My Image" />
+            <img class="relative z-10 rounded-full lg:max-w-[70%] max-w-[60%] mx-auto outline outline-[.7rem] outline-offset-[.1rem] outline-blue-400/30"
+                src="https://cdn.buymeacoffee.com/uploads/profile_pictures/2023/11/PIXxBAJGpUj1wI7F.png@300w_0e.webp"
+                alt="My Image" />
         </div>
-
-        <div id="rooms" class="section">
-            <h2>房型介绍</h2>
-            <p>提供多种房型选择，满足不同旅居需求。</p>
-            <h3>🌊 海景两居室</h3>
-            <p>两室一厅一卫，适合情侣或小家庭入住，阳台可看海。</p>
-            <h3>🌅 三室两厅</h3>
-            <p>三房两厅两卫，适合多人家庭旅居，宽敞舒适，可做饭。</p>
-            <h3>🏖️ 四室复式</h3>
-            <p>复式楼设计，带独立阳台和海景视野，适合团体出游。</p>
-        </div>
-        
-        <div class="gallery">
-            <img src="https://dimg04.c-ctrip.com/images/1mc1k12000hsoip8q4A7B_W_1080_808_R5_D.jpg_.webp" alt="图片1">
-            <img src="https://dimg04.c-ctrip.com/images/1mc4w12000hsoip2xE4B7_W_1080_808_R5_D.jpg_.webp" alt="图片2">
-            <img src="https://dimg04.c-ctrip.com/images/1mc3412000hsoim7b9720_W_1080_808_R5_D.jpg_.webp" alt="图片3">
-            <img src="https://dimg04.c-ctrip.com/images/1mc0h12000hsoho51999E_W_1080_808_R5_D.jpg_.webp" alt="图片4">
-            <img src="https://dimg04.c-ctrip.com/images/1mc3312000hsoi8hxF878_W_1080_808_R5_D.jpg_.webp" alt="图片5">
-            <img src="https://dimg04.c-ctrip.com/images/1mc1x12000hsoj32nC606_W_1080_808_R5_D.jpg_.webp" alt="图片6">
-        </div>
-
-        <div id="experience" class="section">
-            <h2>特色体验</h2>
-            <h3>🎣 海钓之旅</h3>
-            <p>乘坐游艇出海，体验真正的海钓乐趣，感受海南渔民文化，适合新手和钓鱼爱好者。</p>
-            <h3>🌅 落日沙滩漫步</h3>
-            <p>金沙滩的日落美不胜收，金色余晖洒在海面，伴随海浪声漫步，感受大自然的魅力。</p>
-            <h3>🍲 特色美食体验</h3>
-            <p>品尝地道临高特色小吃，如临高粉、烤乳猪，韭菜饼，或前往海鲜市场挑选新鲜海产，自己烹饪美味佳肴。</p>
-            <h3>♨️ 温泉养生</h3>
-            <p>周边温泉资源丰富，适合泡汤放松，舒缓身心，享受悠闲度假时光。</p>
-        </div>
-<!-- 全景图嵌入 -->
-            <div class="kuula-embed">
-                <script src="https://static.kuula.io/embed.js" data-kuula="https://kuula.co/share/hPnNb?logo=1&info=1&fs=1&vr=0&sd=1&thumbs=1" data-width="100%" data-height="640px"></script>
+        <div
+            class="w-full flex flex-col justify-center gap-4 md:text-left text-center text-gray-800 dark:text-white md:mt-0 sm:mt-8 mt-4">
+            <h1 class="md:text-4xl sm:text-3xl text-2xl font-semibold">Hello, My name is Muhilan</h1>
+            <h3 class="capitalize text-primarylw">I'm <span
+                    class="typing text-primarylw dark:text-primarylw-2">fullstack developer</span></h3>
+            <p>Experienced full-stack developer with 4+ years of expertise in Laravel, NestJS, Nuxt.js, Next.js,
+                Android, and some Flutter experience.</p>
+            <div class="sm:mt-4 mt-2">
+                <button class="px-6 py-3 rounded-xl bg-primarylw text-white rounded-sm">Get In Touch</button>
             </div>
         </div>
-
-        <div id="video" class="section">
-            <h2>视频展示</h2>
-            <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113995696576311&bvid=BV1SzKHe7EFP&cid=28369094837&p=1" >allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-         <div id="contact" class="section">
-            <h2>联系我们</h2>
-            <p>📍 地址：海南临高碧桂园金沙滩</p>
-            <p>📞 电话：+86 133-7989-8760</p>
-            <p>📧 订房首页：<a href="https://hotels.ctrip.com/hotels/117471148.html?cityid=20868#ctm_ref=www_hp_his_lst" target="_blank">点击这里预订</a></p>
-            <p>📲 微信：<a href="https://wpa.qq.com/msgrd?v=3&uin=2861332176&site=qq&menu=yes">2861332176</a></p>
-        </div>
     </div>
+</div>
 
-    <footer>
-        <p>&copy; 2025 君乐民宿. All Rights Reserved.</p>
-    </footer>
 
-    <!-- OpenStreetMap Embed -->
-    <div class="map-container" style="height: 400px; margin-top: 30px;">
-        <iframe 
-            width="100%" 
-            height="100%" 
-            src="https://www.openstreetmap.org/export/embed.html?bbox=108.7035466%2C18.2782142%2C108.7280885%2C18.2905884&layer=mapnik&marker=18.2844008%2C108.7158172" 
-            frameborder="0" style="border: 1px solid black;"></iframe>
-        <br>
-        <small><a href="https://www.openstreetmap.org/?mlat=18.2844008&mlon=108.7158172#map=16/18.2844/108.7158" target="_blank">查看更大地图</a></small>
-    </div>
+<script>
+    const textElement = document.querySelector('.typing');
+    const textArray = [
+        'FullStack Developer,',
+        'Frontend Developer,',
+        'Backend Developer,',
+        'Mobile Apps Developer.'
+    ];
 
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+        const currentText = textArray[textIndex];
+
+        if (isDeleting) {
+            textElement.textContent = currentText.substring(0, charIndex--);
+        } else {
+            textElement.textContent = currentText.substring(0, charIndex++);
+        }
+
+        let typingSpeed = isDeleting ? 50 : 100;
+
+        if (!isDeleting && charIndex === currentText.length) {
+            typingSpeed = 1000; // Pause before deleting
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            textIndex = (textIndex + 1) % textArray.length;
+            typingSpeed = 500; // Pause before typing new text
+        }
+
+        setTimeout(typeEffect, typingSpeed);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        typeEffect();
+    });
+
+    // Toggle mobile menu visibility and icon change
+    document.getElementById('menu-toggle').addEventListener('change', function () {
+        var menu = document.getElementById('menu');
+        var icon = document.querySelector('label[for="menu-toggle"] svg');
+
+        if (this.checked) {
+            menu.classList.remove('hidden');
+            menu.classList.add('block', 'bg-gray-200', 'dark:bg-gray-900');
+
+            // Change icon to "X" (close)
+            icon.innerHTML = '<path d="M14.348 14.849l-4.349-4.349-4.349 4.349-1.415-1.415 4.349-4.349-4.349-4.349 1.415-1.415 4.349 4.349 4.349-4.349 1.415 1.415-4.349 4.349 4.349 4.349z"></path>';
+        } else {
+            menu.classList.remove('block', 'bg-gray-200', 'dark:bg-gray-900');
+            menu.classList.add('hidden');
+
+            // Change icon back to menu (3 bars)
+            icon.innerHTML = '<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>';
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle"
+        class="fixed z-50 top-2 left-2 text-gray-800 dark:text-gray-200 dark:text-white bg-gray-500/30 dark:bg-gray-900/70 p-2 rounded-full shadow-md hover:bg-gray-700">
+        <!-- Sun Icon for Light Mode -->
+        <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+        </svg>
+
+        <!-- Moon Icon for Dark Mode -->
+        <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+        </svg>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/lightwind@3.1.0/src/lightswind.min.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class', // Enable class-based dark mode
+            theme: {
+                extend: {
+                    colors: {},
+                },
+            },
+        };
+
+        const setInitialTheme = () => {
+            const currentTheme = localStorage.getItem('iframetheme') || 'dark';
+            if (currentTheme === 'dark') {
+                document.body.classList.add('dark');
+                document.getElementById('sun-icon').style.opacity = '0';
+                document.getElementById('moon-icon').style.opacity = '1';
+            } else {
+                document.body.classList.remove('dark');
+                document.getElementById('sun-icon').style.opacity = '1';
+                document.getElementById('moon-icon').style.opacity = '0';
+            }
+        };
+
+        setInitialTheme();
+
+        const themeToggleButton = document.getElementById('theme-toggle');
+        themeToggleButton.addEventListener('click', () => {
+            const currentTheme = localStorage.getItem('iframetheme') || 'dark';
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            localStorage.setItem('iframetheme', newTheme);
+
+            document.body.classList.toggle('dark', newTheme === 'dark');
+
+            if (newTheme === 'dark') {
+                document.getElementById('moon-icon').style.opacity = '0';
+                document.getElementById('sun-icon').style.opacity = '1';
+            } else {
+                document.getElementById('moon-icon').style.opacity = '1';
+                document.getElementById('sun-icon').style.opacity = '0';
+            }
+
+            const iframe = document.querySelector('iframe');
+            if (iframe) {
+                const iframeWindow = iframe.contentWindow;
+                const iframeDocument = iframe.contentDocument || iframeWindow.document;
+
+                if (iframeDocument) {
+                    iframeDocument.addEventListener('DOMContentLoaded', () => {
+                        iframeDocument.body.classList.toggle('dark', newTheme === 'dark');
+                    });
+                }
+            }
+        });
+    </script>
 </body>
+
 </html>
