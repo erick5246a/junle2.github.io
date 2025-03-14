@@ -107,10 +107,12 @@
         <a href="https://www.canva.com/design/DAGeS4XK_5U/f2IKKTd0zGHul-7V3KBkCw/view?utm_content=DAGeS4XK_5U&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3d01c425ad" class="btn">更多详情</a>
         <a href="https://www.canva.com/design/DAGeroFpQrI/iV6zyda2yO90VaWEdvbvaQ/view?utm_content=DAGeroFpQrI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0d7d715c54" class="btn">更多详情Ⅱ</a>
     </header>
-
-   <nav>
-        <a href="#about" aria-label="了解更多关于我们" class="nav-link">关于我们</a>
-         .Navbar {
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航栏示例</title>
+    <style>
+        /* 导航栏样式 */
+        .Navbar {
             position: fixed;
             top: 0;
             width: 100%;
@@ -121,9 +123,46 @@
             padding: 15px 0;
             z-index: 1000;
         }
-        <a href="#rooms" aria-label="了解更多房型介绍" class="nav-link">房型介绍</a>
-        <a href="#experience" aria-label="了解更多特色体验" class="nav-link">特色体验</a>
-        <a href="#contact" aria-label="联系我们" class="nav-link">联系我们</a>
+
+        /* 导航列表 */
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 按钮样式 */
+        .nav-link {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            color: #333;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+        }
+
+        /* 悬浮时：变色 */
+        .nav-link:hover {
+            color: #007bff;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav role="navigation" class="Navbar">
+        <ul class="nav-list">
+            <li><a href="#about" aria-label="了解更多关于我们" class="nav-link">关于我们</a></li>
+            <li><a href="#rooms" aria-label="了解更多房型介绍" class="nav-link">房型介绍</a></li>
+            <li><a href="#experience" aria-label="了解更多特色体验" class="nav-link">特色体验</a></li>
+            <li><a href="#contact" aria-label="联系我们" class="nav-link">联系我们</a></li>
+        </ul>
     </nav>
 
     <div class="container">
