@@ -110,20 +110,120 @@
     </header>
 
    <nav>
-        <a href="#about" aria-label="了解更多关于我们" class="nav-link">关于我们</a>
-       .Navbar {
-    backdrop-filter: blur(30px);
-    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
-    border: 2px solid rgba(225, 225, 225, 0.18);
-}
+       <!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>导航栏示例</title>
+    <style>
+        /* 导航栏整体样式 */
+        .Navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+            backdrop-filter: blur(30px); /* 背景模糊 */
+            box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+            border-bottom: 2px solid rgba(225, 225, 225, 0.18);
+            padding: 15px 0;
+            transition: background 0.3s ease-in-out;
+            z-index: 1000;
+        }
 
-        <a href="#rooms" aria-label="了解更多房型介绍" class="nav-link">房型介绍</a>
-       .Navbar {
-    backdrop-filter: blur(30px);
-    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
-    border: 2px solid rgba(225, 225, 225, 0.18);
-}
+        /* 导航列表 */
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+        }
 
+        /* 按钮样式 */
+        .nav-link {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            color: #333;
+            padding: 10px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in-out forwards;
+        }
+
+        /* 悬浮时：变色 & 添加底部边框 */
+        .nav-link:hover {
+            color: #007bff;
+            transform: scale(1.05);
+        }
+
+        /* 按钮点击时的轻微缩放效果 */
+        .nav-link:active {
+            transform: scale(0.95);
+        }
+
+        /* 添加底部动态高亮 */
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            width: 0%;
+            height: 3px;
+            background: #007bff;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
+        /* 悬浮时底部高亮 */
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        /* 按钮淡入动画 */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 占位内容，防止导航栏遮挡 */
+        .content {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 24px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav role="navigation" class="Navbar">
+        <ul class="nav-list">
+            <li><a href="#about" aria-label="了解更多关于我们" class="nav-link">关于我们</a></li>
+            <li><a href="#rooms" aria-label="了解更多房型介绍" class="nav-link">房型介绍</a></li>
+            <li><a href="#experience" aria-label="了解更多特色体验" class="nav-link">特色体验</a></li>
+            <li><a href="#contact" aria-label="联系我们" class="nav-link">联系我们</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>欢迎来到我们的页面</h1>
+        <p>这里是示例内容，向下滚动查看效果。</p>
+        <p style="margin-top: 1000px;">到底啦！😃</p>
+    </div>
+
+</body>
+</html>
         <a href="#experience" aria-label="了解更多特色体验" class="nav-link">特色体验</a>
         <a href="#contact" aria-label="联系我们" class="nav-link">联系我们</a>
     </nav>
